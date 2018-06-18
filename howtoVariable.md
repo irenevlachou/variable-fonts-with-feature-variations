@@ -108,9 +108,11 @@ There are many occasions that a specific glyph has an alternative design for a n
 
 The experimental [”rules”](http://new.superpolator.com/documentation/rules/) feature of Superpolator is, in my opinion, the most useful tool to visualise these glyph substitutions and understand their location in the design space.
 
-i.e  
+e.g.
 
-/Screen Shot 2018-06-19 at 00.19.47.png
+![](/Users/iv/Desktop/dollar.png)
+
+
 
 	Protipo-Light has a dollar with a vertical stroke
 	Protipo-Medium has a dollar with a vertical stroke
@@ -131,8 +133,7 @@ Here is how to set these switches:
 
 - First we design the extra glyphs :) one for each design and just like everything else these alternate glyphs need to be compatible across the masters. The great thing is that these alternates **DO NOT** need to be compatible with the default glyphs.  
 
-   /Screen Shot 2018-06-18 at 22.28.04.png
-
+![](/Users/iv/Desktop/alternates.png)
 
 
 - Secondly we need to set up the `'rvrn'` feature. The [rvrn feature](https://docs.microsoft.com/en-us/typography/opentype/spec/features_pt#tag-rvrn) is on by default and together with the Feature variation conditions will make the switch. According to the spec this feature has zero lookups: 
