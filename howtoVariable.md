@@ -113,12 +113,11 @@ e.g.
 ![dollar](images/dollar.png)
 
 
-
 	Protipo-Light has a dollar with a vertical stroke
 	Protipo-Medium has a dollar with a vertical stroke
 	Protipo-ExtraBold has a dollar without a vertical stroke
 
-![designspace](images/superpolator.mp4)
+![superpolator](images/superpolator.gif)
 
 OpenType Font Variations supports the selection of alternate glyphs for **particular regions** of the design space.
 	This is accessible through the `'rvrn'` OpenType feature that, like all glyph substitutions, is stored in the GSUB table. 
