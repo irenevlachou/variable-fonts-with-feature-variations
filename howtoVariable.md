@@ -276,3 +276,5 @@ And voilà ✊
 Microsoft hosts a [Github repository](https://github.com/Microsoft/OpenTypeDesignVariationAxisTags) that is used for discussion and review of proposals for registration of OpenType design-variation axis tags. It includes a [Proposal Summary Form](https://github.com/Microsoft/OpenTypeDesignVariationAxisTags/blob/master/Proposals/ProposalSummary.md) and all the needed information about submissions.
 [Here](https://github.com/Microsoft/OpenTypeDesignVariationAxisTags/tree/master/Proposals)you can find all the submitted proposals till now, including [Glyph Extension](https://github.com/Microsoft/OpenTypeDesignVariationAxisTags/blob/master/Proposals/Glyph_Extension_Axis/ProposalSummary.md) by [Sahar Afshar](https://github.com/sahafshar) and [José Solé](https://github.com/jmsole) and [TypeNetwork](https://github.com/TypeNetwork)'s [Parametric Axes
 ](https://github.com/Microsoft/OpenTypeDesignVariationAxisTags/tree/master/Proposals/TypeNetwork_ParametricAxes) that can be seen also [here](https://variationsguide.typenetwork.com).
+
+TO ADD: full list of variable fonts with jumps
