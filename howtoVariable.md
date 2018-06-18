@@ -110,7 +110,7 @@ The experimental [”rules”](http://new.superpolator.com/documentation/rules/)
 
 e.g.
 
-![](/Users/iv/Desktop/dollar.png)
+![dollar](images/dollar.png)
 
 
 
@@ -118,7 +118,7 @@ e.g.
 	Protipo-Medium has a dollar with a vertical stroke
 	Protipo-ExtraBold has a dollar without a vertical stroke
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TLDSbcXp2xY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+![designspace](images/superpolator.mp4)
 
 OpenType Font Variations supports the selection of alternate glyphs for **particular regions** of the design space.
 	This is accessible through the `'rvrn'` OpenType feature that, like all glyph substitutions, is stored in the GSUB table. 
@@ -133,7 +133,7 @@ Here is how to set these switches:
 
 - First we design the extra glyphs :) one for each design and just like everything else these alternate glyphs need to be compatible across the masters. The great thing is that these alternates **DO NOT** need to be compatible with the default glyphs.  
 
-![](/Users/iv/Desktop/alternates.png)
+![alternates](images/alternates.png)
 
 
 - Secondly we need to set up the `'rvrn'` feature. The [rvrn feature](https://docs.microsoft.com/en-us/typography/opentype/spec/features_pt#tag-rvrn) is on by default and together with the Feature variation conditions will make the switch. According to the spec this feature has zero lookups: 
