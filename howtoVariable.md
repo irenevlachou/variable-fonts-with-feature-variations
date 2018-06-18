@@ -249,7 +249,7 @@ For a weight axis 0 to 1000, with the default at 0 our ”jump” was happening 
 ###The biggest secret of all
 In order for this new GSUB to run we need to update the version number! The GSUB version that we get from `fontmake` is:
 
-    ```xml
+    ```
     <GSUB>
         <Version value="0x00010000"/>
     ```
@@ -258,7 +258,7 @@ In order for this new GSUB to run we need to update the version number! The GSUB
    
 This one doesn't do the flip so we need to update it to:
     
-    ```xml
+    ```
     <GSUB>
         <Version value="0x00010001"/>
     ```
