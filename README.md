@@ -172,7 +172,7 @@ lookup RVRN2 {
 } RVRN2;
 ```
 
-At this point we proceed normally and we generate a variable font with fontmaker command.
+At this point we proceed normally and we generate a variable font with fontmake command.
 
 ### Setting up the FeatureVariations conditions
 The variable font that we have has all the ingredients to support glyph substitutions apart from the conditions subtable.
@@ -246,23 +246,27 @@ For a weight axis 0 to 1000, with the default at 0 our ”jump” was happening 
 ###The biggest secret of all
 In order for this new GSUB to run we need to update the version number! The GSUB version that we get from `fontmake` is:
 
-    ```xml
-    <GSUB>
+```
+ <GSUB>
         <Version value="0x00010000"/>
-    ```
+```
 
    
    
-This one doesn't do the flip so we need to update it to:
+This one doesn't do the flip and TTX doesn't change it either, so we need to update it to:
+
     
-    ```xml
-    <GSUB>
+```
+ <GSUB>
         <Version value="0x00010001"/>
-    ```
+```
+    
+Good news it might be soon a [warning](https://github.com/fonttools/fonttools/issues/1215).
+    
 
-- We update the GSUB in our TTF
+We update the GSUB in our TTF
 
-    `ttx -m myVAR.TTF GSUB.ttx`
+`ttx -m myVAR.TTF GSUB.ttx`
 
 And voilà ✊
 
