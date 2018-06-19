@@ -200,14 +200,19 @@ e.g.
 <FeatureVariations>
       <Version value="0x00010000"/>
       <FeatureVariationRecord index="0">
-        <ConditionSet>
-          <!-- ConditionCount=1 -->
-          <ConditionTable index="0" Format="1">
+        
+	
+	<ConditionSet>
+	        
+	<!-- ConditionCount=1 -->
+	<ConditionTable index="0" Format="1">
             <AxisIndex value="0"/>
             <FilterRangeMinValue value="0.12"/>
             <FilterRangeMaxValue value="0.24"/>
           </ConditionTable>
+          
         </ConditionSet>
+        
         <FeatureTableSubstitution>
           <Version value="0x00010000"/>
           <!-- SubstitutionCount=1 -->
@@ -243,17 +248,18 @@ We can have multiple conditions in our FeatureVariations, i.e one for the weight
 <FeatureVariations>
       <Version value="0x00010000"/>
       <FeatureVariationRecord index="0">
-        <ConditionSet>
+        
+	
+	<ConditionSet>
 	        
-	   <!-- ConditionCount=2 -->
-		     
-		  <ConditionTable index="0" Format="1">
+	<!-- ConditionCount=2 -->
+	<ConditionTable index="0" Format="1">
             <AxisIndex value="0"/>
             <FilterRangeMinValue value="0.12"/>
             <FilterRangeMaxValue value="0.24"/>
           </ConditionTable>
           
-	     <ConditionTable index="0" Format="1">
+	<ConditionTable index="0" Format="1">
             <AxisIndex value="1"/>
             <FilterRangeMinValue value="0.30"/>
             <FilterRangeMaxValue value="0.60"/>
