@@ -63,7 +63,7 @@ The structure is fairly simple, here is an example of a design space with two ma
     <sources>
 
         <!-- first master, FamilyLight.ufo that sits on the weight axis on location=0 -->        
-		<source familyname="Family" filename="FamilyLight.ufo" stylename="Light">
+	<source familyname="Family" filename="FamilyLight.ufo" stylename="Light">
             <location>
                 <dimension name="weight" xvalue="0" />
             </location>
