@@ -237,6 +237,46 @@ The switch is happening between 0.12-0.24 on the weight axis.
 
 - **Lookuplist** is the number of the lookup that represents the substitution groups`<Lookup index="57">`
 
+We can have multiple conditions in our FeatureVariations, i.e one for the weight axis and one of the width. This would look like this:
+
+```xml
+<FeatureVariations>
+      <Version value="0x00010000"/>
+      <FeatureVariationRecord index="0">
+        <ConditionSet>
+	        
+	   <!-- ConditionCount=2 -->
+		     
+		  <ConditionTable index="0" Format="1">
+            <AxisIndex value="0"/>
+            <FilterRangeMinValue value="0.12"/>
+            <FilterRangeMaxValue value="0.24"/>
+          </ConditionTable>
+          
+	     <ConditionTable index="0" Format="1">
+            <AxisIndex value="1"/>
+            <FilterRangeMinValue value="0.30"/>
+            <FilterRangeMaxValue value="0.60"/>
+          </ConditionTable>
+          
+        </ConditionSet>
+        
+        <FeatureTableSubstitution>
+          <Version value="0x00010000"/>
+          <!-- SubstitutionCount=1 -->
+          <SubstitutionRecord index="0">
+            <FeatureIndex value="14"/>
+            <Feature>
+              <!-- LookupCount=1 -->
+              <LookupListIndex index="0" value="57"/>
+            </Feature>
+          </SubstitutionRecord>
+        </FeatureTableSubstitution>
+      </FeatureVariationRecord>
+</FeatureVariations>
+```
+
+
 
 The [condition table](https://docs.microsoft.com/en-us/typography/opentype/spec/chapter2#condition-table) uses  a normalized scale with minimum -1, default 0 and maximum 1. 
 In the “rules” in our Superpolator document, we used the concerned axis value to set our substitution. Now we have to convert the “switching” values to a scale from -1 to 1, with default always to 0.
