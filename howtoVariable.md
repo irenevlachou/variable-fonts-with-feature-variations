@@ -1,13 +1,4 @@
-# Building variable fonts with Feature Variations
-
-<<<<<<< HEAD
-This document is a step-by-step guide for building a variable font using Feature Variations. 
-It includes tips and insight about common problems. It builds upon [Travis Kochel's](https://github.com/scribbletone) [guide for variable fonts](https://github.com/scribbletone/i-can-variable-font) and [Miguel Sousa's](https://github.com/miguelsousa) documentation on [Adobe variable font prototype](https://github.com/adobe-fonts/adobe-variable-font-prototype/graphs/contributors).
-
-For this guide the source files should be in UFO format and [fonttools](https://github.com/fonttools/fonttools), [fontmake](https://github.com/googlei18n/fontmake) and TTX need to be installed. Scary Terminal and a good text editor are necessary. It's not a workflow proposal or suggestion, rather it is personal notes and things that I discovered while making [TypeTogether](https://www.type-together.com) [Protipo Variable](https://protipo.type-together.com). Many of these steps will be surely scripted and accessible through nice interfaces, hopefully soon and probably not by me! [Cosimo](https://github.com/anthrotype) and [Just](https://github.com/justvanrossum) are working hard on [featureVars.py](https://github.com/fonttools/fonttools/blob/master/Lib/fontTools/varLib/featureVars.py). In the meantime I hope these notes can be helpful to all average-human-level type designers.
-
----
-# Preparation for variable fonts
+## Preparation for variable fonts
 ### Setting up Axes
 
 
@@ -247,19 +238,19 @@ For a weight axis 0 to 1000, with the default at 0 our ”jump” was happening 
 ###The biggest secret of all
 In order for this new GSUB to run we need to update the version number! The GSUB version that we get from `fontmake` is:
 
-    ```xml
+```
     <GSUB>
         <Version value="0x00010000"/>
-    ```
+```
 
    
    
 This one doesn't do the flip so we need to update it to:
     
-    ```xml
+```
     <GSUB>
         <Version value="0x00010001"/>
-    ```
+```
 
 - We update the GSUB in our TTF
 
@@ -269,19 +260,10 @@ And voilà ✊
 
 ---
 
-## Extra stuff
+## extra stuff
 
 Microsoft hosts a [Github repository](https://github.com/Microsoft/OpenTypeDesignVariationAxisTags) that is used for discussion and review of proposals for registration of OpenType design-variation axis tags. It includes a [Proposal Summary Form](https://github.com/Microsoft/OpenTypeDesignVariationAxisTags/blob/master/Proposals/ProposalSummary.md) and all the needed information about submissions.
 [Here](https://github.com/Microsoft/OpenTypeDesignVariationAxisTags/tree/master/Proposals)you can find all the submitted proposals till now, including [Glyph Extension](https://github.com/Microsoft/OpenTypeDesignVariationAxisTags/blob/master/Proposals/Glyph_Extension_Axis/ProposalSummary.md) by [Sahar Afshar](https://github.com/sahafshar) and [José Solé](https://github.com/jmsole) and [TypeNetwork](https://github.com/TypeNetwork)'s [Parametric Axes
 ](https://github.com/Microsoft/OpenTypeDesignVariationAxisTags/tree/master/Proposals/TypeNetwork_ParametricAxes) that can be seen also [here](https://variationsguide.typenetwork.com).
 
-
-TODO: 
-
-- link variable fonts with FeatureVariations
-- link articles/presentations FeatureVariations
-=======
-This document is a step-by-step guide for building a variable font using Feature Variations. It includes tips and insight about common problems. It builds upon Travis Kochel's guide for variable fonts and Miguel Sousa's documentation on Adobe variable font prototype. 
-For this guide the source files should be in UFO format and fonttools, fontmake and TTX need to be installed. Scary Terminal and a good text editor are necessary.
-It's not a workflow proposal or sugegstion, rather than personal notes and things that I discover whikle making TypeTogether Protipo Variable. Many of these steps can be surely scripted and be accessible through nice interfaces, hopefully soon and probably not by me! In the meantime I hope these notes can be helpful to all average-human-level type designers.
->>>>>>> 5776a90b9a5b071dd67a33006066d7e812485f81
+TO ADD: full list of variable fonts with jumps
