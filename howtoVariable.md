@@ -1,4 +1,3 @@
----
 ## Preparation for variable fonts
 ### Setting up Axes
 
