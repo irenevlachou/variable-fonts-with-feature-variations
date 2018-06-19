@@ -243,7 +243,7 @@ In the “rules” in our Superpolator document, we used the concerned axis valu
 
 For a weight axis 0 to 1000, with the default at 0 our ”jump” was happening between 120 - 240. So in our new scale 0.12-0.24.
 
-###The biggest secret of all
+### The biggest secret of all
 In order for this new GSUB to run we need to update the version number! The GSUB version that we get from `fontmake` is:
 
 ```
